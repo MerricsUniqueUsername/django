@@ -49,7 +49,7 @@ class CodeRunner:
     
     def run_code(self, code, image_output=None):
         # Create sandbox
-        sbx = Sandbox(timeout=120)
+        sbx = Sandbox()
         
         # Run code
         response = sbx.run_code(code)
@@ -104,7 +104,7 @@ class CodeRunner:
         return result
     
     def run_code_csv(self, code, csvholder: CSVHolder, image_output=None):
-        sbx = Sandbox(timeout=120)
+        sbx = Sandbox()
         uploaded_urls = []
 
         # Get dataframe from CSVHolder
