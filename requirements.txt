@@ -5,3 +5,6 @@ psycopg2==2.9.9
 sqlparse==0.5.0
 whitenoise==6.7.0
 dotenv==0.9.9
+djangorestframework==3.16.1
+django-cors-headers==4.7.0
+pillow==11.3.0
