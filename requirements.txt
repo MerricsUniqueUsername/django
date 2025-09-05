@@ -8,3 +8,8 @@ dotenv==0.9.9
 djangorestframework==3.16.1
 django-cors-headers==4.7.0
 pillow==11.3.0
+google-generativeai
+google-genai
+pandas==2.3.2
+boto3==1.40.25
+e2b-code-interpreter==2.0.0
