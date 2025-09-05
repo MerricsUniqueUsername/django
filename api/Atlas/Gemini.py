@@ -232,7 +232,6 @@ def calculation_ai(query, relevant_info):
                 "Give each graph a random UUID name, import uuid",
                 "Include the name of each graph in the printed dict",
                 'To save a plot: plt.savefig("name.png", format="png")\t plt.close()',
-                "Here is the analysis of each column in the DataFrame. Make sure each calculation is done in accordance to the analysis, and each column that is being analyzed is also makes sense: " + str(csv_analysis),
                 "Never address previous messages by number",
                 "Put any assumptions you make in the dict as well, for example if you assume the user wants to calculate the sum of a list of numbers, put that in the dict as well.",
                 "You should not be doing anything intensive, such as web scraping or database queries, making UIs, or anything that requires a lot of resources.",
