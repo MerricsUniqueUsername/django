@@ -129,7 +129,8 @@ def determine_relevant_information(prompt, past_messages):
                 "NOTE: The person you are giving this plan to has NO IDEA what the previous messages were, so include information needed to acheive the plan",
                 "Do this by adding a list of past message summaries that are relevant",
                 "New messages do not have access to calculation variables that were returned earlier",
-                "Make your response SUPER short, do not include a lot of information"
+                "Make your response SUPER short, do not include a lot of information",
+                "If anything in the past seems related or relevant, include it in your response",
             ]
         ),
     )
