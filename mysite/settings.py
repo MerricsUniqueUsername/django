@@ -30,9 +30,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+
 # FORM SUBMISSION
 # Comment out the following line and place your railway URL, and your production URL in the array.
 CSRF_TRUSTED_ORIGINS = ["https://atlasai.up.railway.app"]
+
+# Allow CORS from url
+CORS_ALLOWED_ORIGINS = [
+    "https://atlasai.up.railway.app",
+    "https://atlasai-ten.vercel.app",
+]
 
 # Application definition
 
@@ -44,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'api',
 ]
 
