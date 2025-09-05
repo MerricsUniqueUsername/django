@@ -4,14 +4,15 @@ from pathlib import Path
 import ast
 import boto3
 import io
+import os
 
 class CSVHolder:
     def __init__(self, path: str):
 
         # AWS S3 Configuration
-        BUCKET_NAME = "atlas07072025"
-        AWS_ACCESS_KEY_ID = "AKIARIHPM7YSWMRX2YSF"
-        AWS_SECRET_ACCESS_KEY = "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"
+        BUCKET_NAME = os.getenv("BUCKET_NAME")
+        AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+        AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
         # Get file from S3
         self.s3_client = boto3.client(

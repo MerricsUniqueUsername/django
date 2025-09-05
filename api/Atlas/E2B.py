@@ -15,9 +15,9 @@ class CodeRunner:
         self.api_key = e2b_api_key or api_key
         
         # AWS S3 Configuration
-        self.BUCKET_NAME = "atlas07072025"
-        self.AWS_ACCESS_KEY_ID = "AKIARIHPM7YSWMRX2YSF"
-        self.AWS_SECRET_ACCESS_KEY = "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"
+        self.BUCKET_NAME = os.getenv("BUCKET_NAME")
+        self.AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+        self.AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
         
         # Initialize S3 client
         self.s3_client = boto3.client(
