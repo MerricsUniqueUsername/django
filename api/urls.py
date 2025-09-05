@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path('', views.api_root, name='api-root'),
     path('createchat/', views.create_chat, name='createchat'),
+    path('sendchat/', views.send_chat, name='sendchat'),
 ]
