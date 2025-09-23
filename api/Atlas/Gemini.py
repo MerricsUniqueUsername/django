@@ -203,19 +203,16 @@ def calculation_ai(query, relevant_info):
                 "You are not talking to the user, you are just calculating.",
                 "You write all your code in Python",
                 "The prompt could be asking for many things, so you will need to calculate multiple things if needed.",
-                
-                # CRITICAL: NO NESTED DICTIONARIES
+            
                 "IMPORTANT: You MUST return results in a completely flat dictionary format with NO nesting whatsoever.",
                 "Every key in your result dictionary must map directly to a simple value (string, number, boolean).",
                 "NEVER create dictionaries inside dictionaries, lists of dictionaries, or any nested structures.",
                 
-                # Clear examples of what NOT to do
                 "WRONG examples (DO NOT DO THIS):",
                 "❌ {'results': {'result1': 1, 'result2': 2}}  # Dictionary inside dictionary",
                 "❌ {'stats': [{'mean': 5}, {'max': 10}]}      # List of dictionaries", 
                 "❌ {'data': {'sales': {'q1': 100}}}           # Multiple levels of nesting",
                 
-                # Clear examples of what TO do
                 "CORRECT examples (DO THIS):",
                 "✅ {'result1': 1, 'result2': 2, 'result3': 3}",
                 "✅ {'mean_value': 5, 'max_value': 10, 'count': 100}",
@@ -259,18 +256,15 @@ def calculation_ai_csv(query, relevant_info, csv_analysis, csv_columns):
                 "You write all your code in Python",
                 "The prompt could be asking for many things, so you will need to calculate multiple things if needed.",
                 
-                # CRITICAL: NO NESTED DICTIONARIES
                 "IMPORTANT: You MUST return results in a completely flat dictionary format with NO nesting whatsoever.",
                 "Every key in your result dictionary must map directly to a simple value (string, number, boolean).",
                 "NEVER create dictionaries inside dictionaries, lists of dictionaries, or any nested structures.",
                 
-                # Clear examples of what NOT to do
                 "WRONG examples (DO NOT DO THIS):",
                 "❌ {'results': {'result1': 1, 'result2': 2}}  # Dictionary inside dictionary",
                 "❌ {'stats': [{'mean': 5}, {'max': 10}]}      # List of dictionaries", 
                 "❌ {'data': {'sales': {'q1': 100}}}           # Multiple levels of nesting",
-                
-                # Clear examples of what TO do
+
                 "CORRECT examples (DO THIS):",
                 "✅ {'result1': 1, 'result2': 2, 'result3': 3}",
                 "✅ {'mean_value': 5, 'max_value': 10, 'count': 100}",
